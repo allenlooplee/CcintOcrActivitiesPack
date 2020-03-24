@@ -9,8 +9,8 @@
     <description>$description$</description>
     <copyright>$copyright$</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>https://integrations.uipath.com/docs/integrating-with-uipath</projectUrl>
+    <licenseUrl>https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/allenlooplee/CcintOcrActivitiesPack</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</iconUrl>
     <tags>UiPath Activit𝗒</tags>
     <dependencies>

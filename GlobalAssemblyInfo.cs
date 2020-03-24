@@ -6,9 +6,9 @@ using System.Windows.Markup;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyCompany("Company")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("Company © 2020")]
+[assembly: AssemblyCompany("Allen Lee")]
+[assembly: AssemblyProduct("Ccint OCR Activities Pack")]
+[assembly: AssemblyCopyright("Company © 2020 Allen Lee")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: XmlnsPrefix("http://schemas.uipath.com/workflow/activities", "ui")]
