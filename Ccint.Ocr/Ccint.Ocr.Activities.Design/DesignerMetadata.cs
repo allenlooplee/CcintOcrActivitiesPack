@@ -1,4 +1,4 @@
-﻿using System.Activities.Presentation.Metadata;
+using System.Activities.Presentation.Metadata;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using Ccint.Ocr.Activities.Design.Designers;
@@ -19,6 +19,14 @@ namespace Ccint.Ocr.Activities.Design
 
             #endregion Setup
 
+
+            builder.AddCustomAttributes(typeof(CcintOcrScope), categoryAttribute);
+            builder.AddCustomAttributes(typeof(CcintOcrScope), new DesignerAttribute(typeof(CcintOcrScopeDesigner)));
+            builder.AddCustomAttributes(typeof(CcintOcrScope), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
