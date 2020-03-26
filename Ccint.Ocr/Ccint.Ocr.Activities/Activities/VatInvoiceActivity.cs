@@ -6,6 +6,8 @@ using Newtonsoft.Json.Linq;
 using Ccint.Ocr.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
+using UiPath.Shared.Activities.Utilities;
+using Ccint.Ocr.Models;
 
 namespace Ccint.Ocr.Activities
 {
@@ -59,14 +61,17 @@ namespace Ccint.Ocr.Activities
         {
             // Inputs
             var imagepath = ImagePath.Get(context);
-    
+            var objectContainer = context.GetFromContext<IObjectContainer>(CcintOcrScope.ParentContainerPropertyTag);
+            var ocrService = objectContainer.Get<CcintOcrService>();
+
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
+            var result = await ocrService.RecognizeAsync(OcrNames.VatInvoice, imagepath);
 
             // Outputs
             return (ctx) => {
-                Result.Set(ctx, null);
+                Result.Set(ctx, result);
             };
         }
 

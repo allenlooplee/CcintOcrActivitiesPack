@@ -70,20 +70,38 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to API Key.
+        ///   Looks up a localized string similar to App Key.
         /// </summary>
-        public static string CcintOcrScope_ApiKey_Description {
+        public static string CcintOcrScope_AppKey_Description {
             get {
-                return ResourceManager.GetString("CcintOcrScope_ApiKey_Description", resourceCulture);
+                return ResourceManager.GetString("CcintOcrScope_AppKey_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ApiKey.
+        ///   Looks up a localized string similar to AppKey.
         /// </summary>
-        public static string CcintOcrScope_ApiKey_DisplayName {
+        public static string CcintOcrScope_AppKey_DisplayName {
             get {
-                return ResourceManager.GetString("CcintOcrScope_ApiKey_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CcintOcrScope_AppKey_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to App Secret.
+        /// </summary>
+        public static string CcintOcrScope_AppSecret_Description {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_AppSecret_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AppSecret.
+        /// </summary>
+        public static string CcintOcrScope_AppSecret_DisplayName {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_AppSecret_DisplayName", resourceCulture);
             }
         }
         
@@ -102,24 +120,6 @@ namespace Ccint.Ocr.Activities.Properties {
         public static string CcintOcrScope_DisplayName {
             get {
                 return ResourceManager.GetString("CcintOcrScope_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Secret Key.
-        /// </summary>
-        public static string CcintOcrScope_SecretKey_Description {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_SecretKey_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SecretKey.
-        /// </summary>
-        public static string CcintOcrScope_SecretKey_DisplayName {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_SecretKey_DisplayName", resourceCulture);
             }
         }
         

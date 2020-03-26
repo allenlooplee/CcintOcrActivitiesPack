@@ -185,20 +185,20 @@
     <value>Contains and authenticates all Ccint OCR activities.</value>
     <comment>activity description</comment>
   </data>
-  <data name="CcintOcrScope_ApiKey_DisplayName" xml:space="preserve">
-    <value>ApiKey</value>
+  <data name="CcintOcrScope_AppKey_DisplayName" xml:space="preserve">
+    <value>AppKey</value>
     <comment>property name</comment>
   </data>
-  <data name="CcintOcrScope_ApiKey_Description" xml:space="preserve">
-    <value>API Key</value>
+  <data name="CcintOcrScope_AppKey_Description" xml:space="preserve">
+    <value>App Key</value>
     <comment>property description</comment>
   </data>
-  <data name="CcintOcrScope_SecretKey_DisplayName" xml:space="preserve">
-    <value>SecretKey</value>
+  <data name="CcintOcrScope_AppSecret_DisplayName" xml:space="preserve">
+    <value>AppSecret</value>
     <comment>property name</comment>
   </data>
-  <data name="CcintOcrScope_SecretKey_Description" xml:space="preserve">
-    <value>Secret Key</value>
+  <data name="CcintOcrScope_AppSecret_Description" xml:space="preserve">
+    <value>App Secret</value>
     <comment>property description</comment>
   </data>
   <data name="VatInvoiceActivity_DisplayName" xml:space="preserve">

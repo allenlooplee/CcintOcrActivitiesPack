@@ -7,6 +7,7 @@ using System.ComponentModel;
 using Ccint.Ocr.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
+using Ccint.Ocr.Models;
 
 namespace Ccint.Ocr.Activities
 {
@@ -27,18 +28,18 @@ namespace Ccint.Ocr.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_ApiKey_DisplayName))]
-        [LocalizedDescription(nameof(Resources.CcintOcrScope_ApiKey_Description))]
+        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_AppKey_DisplayName))]
+        [LocalizedDescription(nameof(Resources.CcintOcrScope_AppKey_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> ApiKey { get; set; }
+        public InArgument<string> AppKey { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_SecretKey_DisplayName))]
-        [LocalizedDescription(nameof(Resources.CcintOcrScope_SecretKey_Description))]
+        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_AppSecret_DisplayName))]
+        [LocalizedDescription(nameof(Resources.CcintOcrScope_AppSecret_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> SecretKey { get; set; }
+        public InArgument<string> AppSecret { get; set; }
 
         // A tag used to identify the scope in the activity context
-        internal static string ParentContainerPropertyTag => "ScopeActivity";
+        internal static string ParentContainerPropertyTag => "CcintScope";
 
         // Object Container: Add strongly-typed objects here and they will be available in the scope's child activities.
         private readonly IObjectContainer _objectContainer;
@@ -71,8 +72,8 @@ namespace Ccint.Ocr.Activities
 
         protected override void CacheMetadata(NativeActivityMetadata metadata)
         {
-            if (ApiKey == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(ApiKey)));
-            if (SecretKey == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(SecretKey)));
+            if (AppKey == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AppKey)));
+            if (AppSecret == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AppSecret)));
 
             base.CacheMetadata(metadata);
         }
@@ -80,8 +81,11 @@ namespace Ccint.Ocr.Activities
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
         {
             // Inputs
-            var apikey = ApiKey.Get(context);
-            var secretkey = SecretKey.Get(context);
+            var appkey = AppKey.Get(context);
+            var appSecret = AppSecret.Get(context);
+
+            var ocrService = new CcintOcrService(appkey, appSecret);
+            _objectContainer.Add(ocrService);
 
             return (ctx) => {
                 // Schedule child activities
