@@ -13,14 +13,22 @@ namespace Ccint.Ocr.Models
     {
         public CcintOcrService(string appKey, string appSecret)
         {
+            Name = "Ccint OCR";
+
             _appKey = appKey;
             _appSecret = appSecret;
             _recognizerUrlLookup = GetRecognizerUrlLookup();
         }
 
+        public string Name { get; }
+
         public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath)
         {
-            var recognizerUrl = _recognizerUrlLookup[recognizerName];
+            if (!_recognizerUrlLookup.TryGetValue(recognizerName, out var recognizerUrl))
+            {
+                throw new NotSupportedException($"{recognizerName} is not supported by {Name}.");
+            }
+
             var imageData = File.ReadAllBytes(imagePath);
 
             using (var client = new WebClient())
