@@ -15,12 +15,12 @@ namespace Ccint.Ocr.Models
         {
             _appKey = appKey;
             _appSecret = appSecret;
-            _ocrUrlLookup = BuildOcrUrlLookup();
+            _recognizerUrlLookup = GetRecognizerUrlLookup();
         }
 
-        public async Task<JObject> RecognizeAsync(string ocrName, string imagePath)
+        public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath)
         {
-            var url = _ocrUrlLookup[ocrName];
+            var recognizerUrl = _recognizerUrlLookup[recognizerName];
             var imageData = File.ReadAllBytes(imagePath);
 
             using (var client = new WebClient())
@@ -28,23 +28,23 @@ namespace Ccint.Ocr.Models
                 client.Headers.Add("app-key", _appKey);
                 client.Headers.Add("app-secret", _appSecret);
 
-                var response = await client.UploadDataTaskAsync(url, imageData);
+                var response = await client.UploadDataTaskAsync(recognizerUrl, imageData);
                 var result = Encoding.UTF8.GetString(response);
 
                 return JObject.Parse(result);
             }
         }
 
-        private Dictionary<string, string> BuildOcrUrlLookup()
+        private Dictionary<string, string> GetRecognizerUrlLookup()
         {
             return new Dictionary<string, string>
             {
-                [OcrNames.VatInvoice] = "https://ocr-api.ccint.com/cci_ai/service/v1/vat_invoice"
+                [RecognizerNames.VatInvoice] = "https://ocr-api.ccint.com/cci_ai/service/v1/vat_invoice"
             };
         }
 
         private string _appKey;
         private string _appSecret;
-        private Dictionary<string, string> _ocrUrlLookup;
+        private Dictionary<string, string> _recognizerUrlLookup;
     }
 }

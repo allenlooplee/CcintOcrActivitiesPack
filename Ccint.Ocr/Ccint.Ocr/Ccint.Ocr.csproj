@@ -54,7 +54,7 @@
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Models\CcintOcrService.cs" />
-    <Compile Include="Models\OcrNames.cs" />
+    <Compile Include="Models\RecognizerNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\SharedResources.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

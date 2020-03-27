@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ccint.Ocr.Models
 {
-    public static class OcrNames
+    public static class RecognizerNames
     {
         public const string VatInvoice = "vat_invoice";
     }

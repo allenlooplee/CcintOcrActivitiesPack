@@ -67,7 +67,7 @@ namespace Ccint.Ocr.Activities
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
-            var result = await ocrService.RecognizeAsync(OcrNames.VatInvoice, imagepath);
+            var result = await ocrService.RecognizeAsync(RecognizerNames.VatInvoice, imagepath);
 
             // Outputs
             return (ctx) => {
