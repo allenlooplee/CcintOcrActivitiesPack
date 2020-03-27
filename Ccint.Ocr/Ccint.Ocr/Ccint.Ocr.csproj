@@ -54,6 +54,7 @@
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Models\CcintOcrService.cs" />
+    <Compile Include="Contracts\IOcrService.cs" />
     <Compile Include="Models\RecognizerNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\SharedResources.cs" />
@@ -73,7 +74,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contracts\" />
     <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Ccint.Ocr.Contracts;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Ccint.Ocr.Models
 {
-    public class CcintOcrService
+    public class CcintOcrService : IOcrService
     {
         public CcintOcrService(string appKey, string appSecret)
         {
@@ -22,7 +23,7 @@ namespace Ccint.Ocr.Models
 
         public string Name { get; }
 
-        public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath)
+        public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath, Dictionary<string, object> options = null)
         {
             if (!_recognizerUrlLookup.TryGetValue(recognizerName, out var recognizerUrl))
             {
