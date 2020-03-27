@@ -8,6 +8,7 @@ using Ccint.Ocr.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using Ccint.Ocr.Models;
+using Ccint.Ocr.Contracts;
 
 namespace Ccint.Ocr.Activities
 {
@@ -84,7 +85,7 @@ namespace Ccint.Ocr.Activities
             var appkey = AppKey.Get(context);
             var appSecret = AppSecret.Get(context);
 
-            var ocrService = new CcintOcrService(appkey, appSecret);
+            IOcrService ocrService = new CcintOcrService(appkey, appSecret);
             _objectContainer.Add(ocrService);
 
             return (ctx) => {

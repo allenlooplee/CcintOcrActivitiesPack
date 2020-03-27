@@ -8,6 +8,7 @@ using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
 using Ccint.Ocr.Models;
+using Ccint.Ocr.Contracts;
 
 namespace Ccint.Ocr.Activities
 {
@@ -62,7 +63,7 @@ namespace Ccint.Ocr.Activities
             // Inputs
             var imagepath = ImagePath.Get(context);
             var objectContainer = context.GetFromContext<IObjectContainer>(CcintOcrScope.ParentContainerPropertyTag);
-            var ocrService = objectContainer.Get<CcintOcrService>();
+            var ocrService = objectContainer.Get<IOcrService>();
 
             ///////////////////////////
             // Add execution logic HERE
