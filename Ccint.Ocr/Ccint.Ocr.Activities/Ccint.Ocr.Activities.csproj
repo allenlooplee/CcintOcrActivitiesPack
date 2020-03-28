@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="Activities\BankCardActivity.cs" />
     <Compile Include="Activities\BaseOcrActivity.cs" />
+    <Compile Include="Activities\BusinessLicenseActivity.cs" />
     <Compile Include="Activities\CcintOcrScope.cs" />
     <Compile Include="Activities\VatInvoiceActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

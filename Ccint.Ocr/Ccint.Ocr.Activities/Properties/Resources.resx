@@ -225,6 +225,14 @@
     <value>The result of the recognition in the form of JSON.</value>
     <comment>property description</comment>
   </data>
+  <data name="BankCardActivity_DisplayName" xml:space="preserve">
+    <value>BankCardActivity</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="BankCardActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a bank card.</value>
+    <comment>activity description</comment>
+  </data>
   <data name="Authentication_Category" xml:space="preserve">
     <value>Authentication</value>
     <comment>category</comment>
@@ -261,12 +269,12 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="BankCardActivity_DisplayName" xml:space="preserve">
-    <value>BankCardActivity</value>
+  <data name="BusinessLicenseActivity_DisplayName" xml:space="preserve">
+    <value>BusinessLicenseActivity</value>
     <comment>activity name</comment>
   </data>
-  <data name="BankCardActivity_Description" xml:space="preserve">
-    <value>Returns the recognized values of a bank card.</value>
+  <data name="BusinessLicenseActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a business license.</value>
     <comment>activity description</comment>
   </data>
 </root>

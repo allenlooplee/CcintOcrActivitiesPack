@@ -32,6 +32,10 @@ namespace Ccint.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(BankCardActivity), new DesignerAttribute(typeof(BankCardActivityDesigner)));
             builder.AddCustomAttributes(typeof(BankCardActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new DesignerAttribute(typeof(BusinessLicenseActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

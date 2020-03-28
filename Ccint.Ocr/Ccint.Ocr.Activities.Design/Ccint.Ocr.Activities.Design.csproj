@@ -56,6 +56,9 @@
     <Compile Include="Designers\BankCardActivityDesigner.xaml.cs">
       <DependentUpon>BankCardActivityDesigner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Designers\BusinessLicenseActivityDesigner.xaml.cs">
+      <DependentUpon>BusinessLicenseActivityDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\CcintOcrScopeDesigner.xaml.cs">
       <DependentUpon>CcintOcrScopeDesigner.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Designers\BankCardActivityDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\BusinessLicenseActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

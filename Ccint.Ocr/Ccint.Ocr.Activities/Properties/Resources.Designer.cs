@@ -124,6 +124,24 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a business license..
+        /// </summary>
+        public static string BusinessLicenseActivity_Description {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BusinessLicenseActivity.
+        /// </summary>
+        public static string BusinessLicenseActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to App Key.
         /// </summary>
         public static string CcintOcrScope_AppKey_Description {
