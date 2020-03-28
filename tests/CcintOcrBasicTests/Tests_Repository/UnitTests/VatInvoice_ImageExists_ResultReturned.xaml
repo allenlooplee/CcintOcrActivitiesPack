@@ -26,6 +26,7 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>Newtonsoft.Json.Linq</x:String>
       <x:String>System.Xml.Serialization</x:String>
+      <x:String>Newtonsoft.Json</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -50,6 +51,7 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Unit testing comprises of three stages: &#xA;&#xA;       - Arrange&#xA;       - Act&#xA;       - Assert. &#xA;&#xA;Basic idea of Unit Testing is to arrange a set of data that will be used to test the code. Using that data, tested code is run and the result is assigned to the &quot;actual&quot; variable. Result of the test run is then asserted to see if test have passed or not (usually this is done by comparing &quot;actual&quot; value with the &quot;expected&quot;).&#xA;&#xA;Tests can be constructed to test &quot;happy&quot; paths, fail paths and/or to check if the correct exceptions are thrown by the code.&#xA;&#xA;It is recommended to make more than one test for each peace of the code. This is to make sure that the code correctly handles both good and bad data, and also to see if correct exceptions are thrown by the code.&#xA;&#xA;IMPORTANT: For Unit Test to be eligible for use in TestingFramework it must implement Assert Unit Test activity that can be found in CustomActivities.VariableComparer namespace." DisplayName="Unit Test" sap:VirtualizedContainerService.HintSize="518,1916" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -142,7 +144,7 @@
                   <OutArgument x:TypeArguments="x:String">[actual]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[ocrResult("words_result")("PurchaserName").Value(Of String)()]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[ocrResult.SelectToken("$..item_list[?(@.key == 'vat_invoice_payer_name')].value").Value(Of String)]</InArgument>
                 </Assign.Value>
               </Assign>
             </Sequence>
