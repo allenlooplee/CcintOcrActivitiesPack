@@ -48,7 +48,10 @@ namespace Ccint.Ocr.Models
         {
             return new Dictionary<string, string>
             {
-                [RecognizerNames.VatInvoice] = "https://ocr-api.ccint.com/cci_ai/service/v1/vat_invoice"
+                [RecognizerNames.VatInvoice] = "https://ocr-api.ccint.com/cci_ai/service/v1/vat_invoice",
+                [RecognizerNames.BankCard] = "https://ocr-api.ccint.com/cci_ai/service/v1/bank_card",
+                [RecognizerNames.BusinessLicense] = "https://ocr-api.ccint.com/cci_ai/service/v1/business_license",
+                [RecognizerNames.IdCard] = "https://ocr-api.ccint.com/cci_ai/service/v1/id_card"
             };
         }
 
