@@ -9,6 +9,7 @@ using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using Ccint.Ocr.Models;
 using Ccint.Ocr.Contracts;
+using System.Data;
 
 namespace Ccint.Ocr.Activities
 {
@@ -29,15 +30,10 @@ namespace Ccint.Ocr.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_AppKey_DisplayName))]
-        [LocalizedDescription(nameof(Resources.CcintOcrScope_AppKey_Description))]
+        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_RecognizerConfig_DisplayName))]
+        [LocalizedDescription(nameof(Resources.CcintOcrScope_RecognizerConfig_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> AppKey { get; set; }
-
-        [LocalizedDisplayName(nameof(Resources.CcintOcrScope_AppSecret_DisplayName))]
-        [LocalizedDescription(nameof(Resources.CcintOcrScope_AppSecret_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> AppSecret { get; set; }
+        public InArgument<DataTable> RecognizerConfig { get; set; }
 
         // A tag used to identify the scope in the activity context
         internal static string ParentContainerPropertyTag => "CcintScope";
@@ -73,8 +69,7 @@ namespace Ccint.Ocr.Activities
 
         protected override void CacheMetadata(NativeActivityMetadata metadata)
         {
-            if (AppKey == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AppKey)));
-            if (AppSecret == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AppSecret)));
+            if (RecognizerConfig == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(RecognizerConfig)));
 
             base.CacheMetadata(metadata);
         }
@@ -82,10 +77,9 @@ namespace Ccint.Ocr.Activities
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
         {
             // Inputs
-            var appkey = AppKey.Get(context);
-            var appSecret = AppSecret.Get(context);
+            var recognizerConfig = RecognizerConfig.Get(context);
 
-            IOcrService ocrService = new CcintOcrService(appkey, appSecret);
+            IOcrService ocrService = new CcintOcrService(recognizerConfig);
             _objectContainer.Add(ocrService);
 
             return (ctx) => {

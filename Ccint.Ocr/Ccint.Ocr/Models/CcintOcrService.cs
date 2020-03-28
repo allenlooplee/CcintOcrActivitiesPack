@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -12,20 +13,17 @@ namespace Ccint.Ocr.Models
 {
     public class CcintOcrService : IOcrService
     {
-        public CcintOcrService(string appKey, string appSecret)
+        public CcintOcrService(DataTable recognizerConfig)
         {
             Name = "Ccint OCR";
-
-            _appKey = appKey;
-            _appSecret = appSecret;
-            _recognizerUrlLookup = GetRecognizerUrlLookup();
+            _recognizerConfig = recognizerConfig;
         }
 
         public string Name { get; }
 
         public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath, Dictionary<string, object> options = null)
         {
-            if (!_recognizerUrlLookup.TryGetValue(recognizerName, out var recognizerUrl))
+            if (!FindRecognizer(_recognizerConfig, recognizerName, out var recognizerUrl, out var appKey, out var appSecret))
             {
                 throw new NotSupportedException($"{recognizerName} is not supported by {Name}.");
             }
@@ -34,8 +32,8 @@ namespace Ccint.Ocr.Models
 
             using (var client = new WebClient())
             {
-                client.Headers.Add("app-key", _appKey);
-                client.Headers.Add("app-secret", _appSecret);
+                client.Headers.Add("app-key", appKey);
+                client.Headers.Add("app-secret", appSecret);
 
                 var response = await client.UploadDataTaskAsync(recognizerUrl, imageData);
                 var result = Encoding.UTF8.GetString(response);
@@ -44,19 +42,27 @@ namespace Ccint.Ocr.Models
             }
         }
 
-        private Dictionary<string, string> GetRecognizerUrlLookup()
+        private bool FindRecognizer(DataTable config, string recognizerName, out string recognizerUrl, out string appKey, out string appSecret)
         {
-            return new Dictionary<string, string>
+            var found = config.AsEnumerable().FirstOrDefault(row => row.Field<string>("RecognizerName") == recognizerName);
+            if (found != null)
             {
-                [RecognizerNames.VatInvoice] = "https://ocr-api.ccint.com/cci_ai/service/v1/vat_invoice",
-                [RecognizerNames.BankCard] = "https://ocr-api.ccint.com/cci_ai/service/v1/bank_card",
-                [RecognizerNames.BusinessLicense] = "https://ocr-api.ccint.com/cci_ai/service/v1/business_license",
-                [RecognizerNames.IdCard] = "https://ocr-api.ccint.com/cci_ai/service/v1/id_card"
-            };
+                recognizerUrl = found.Field<string>("RecognizerUrl");
+                appKey = found.Field<string>("AppKey");
+                appSecret = found.Field<string>("AppSecret");
+
+                return true;
+            }
+            else
+            {
+                recognizerUrl = null;
+                appKey = null;
+                appSecret = null;
+
+                return false;
+            }
         }
 
-        private string _appKey;
-        private string _appSecret;
-        private Dictionary<string, string> _recognizerUrlLookup;
+        private DataTable _recognizerConfig;
     }
 }

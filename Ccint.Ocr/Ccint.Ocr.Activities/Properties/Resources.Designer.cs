@@ -142,42 +142,6 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to App Key.
-        /// </summary>
-        public static string CcintOcrScope_AppKey_Description {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_AppKey_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppKey.
-        /// </summary>
-        public static string CcintOcrScope_AppKey_DisplayName {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_AppKey_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to App Secret.
-        /// </summary>
-        public static string CcintOcrScope_AppSecret_Description {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_AppSecret_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppSecret.
-        /// </summary>
-        public static string CcintOcrScope_AppSecret_DisplayName {
-            get {
-                return ResourceManager.GetString("CcintOcrScope_AppSecret_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Contains and authenticates all Ccint OCR activities..
         /// </summary>
         public static string CcintOcrScope_Description {
@@ -192,6 +156,24 @@ namespace Ccint.Ocr.Activities.Properties {
         public static string CcintOcrScope_DisplayName {
             get {
                 return ResourceManager.GetString("CcintOcrScope_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recognizer config.
+        /// </summary>
+        public static string CcintOcrScope_RecognizerConfig_Description {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RecognizerConfig.
+        /// </summary>
+        public static string CcintOcrScope_RecognizerConfig_DisplayName {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_DisplayName", resourceCulture);
             }
         }
         
