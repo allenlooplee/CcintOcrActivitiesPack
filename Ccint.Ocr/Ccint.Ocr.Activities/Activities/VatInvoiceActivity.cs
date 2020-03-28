@@ -16,15 +16,10 @@ namespace Ccint.Ocr.Activities
     [LocalizedDescription(nameof(Resources.VatInvoiceActivity_Description))]
     public class VatInvoiceActivity : BaseOcrActivity
     {
-        #region Protected Methods
-
         protected override string GetRecognizerName()
         {
             return RecognizerNames.VatInvoice;
         }
-
-        #endregion
-
     }
 }
 
