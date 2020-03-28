@@ -13,6 +13,13 @@
 3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|卡证|BusinessLicenseActivity
 4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|卡证|IdCardActivity
 
+## 其他代码库和参考资料
+* [合合文字识别API文档](https://ai.ccint.com/doc/api/general_license_recog/v1.0)
+* [JSON.NET](https://github.com/JamesNK/Newtonsoft.Json)
+* [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
+* [Testing Framework for UiPath](https://connect.uipath.com/marketplace/components/uipath-testing-framework)
+* [Windows Workflow Foundation](https://docs.microsoft.com/en-us/dotnet/framework/windows-workflow-foundation/)
+
 ## 许可协议
 
 本代码库遵循[MIT许可协议](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/LICENSE)，可作商业用途。
