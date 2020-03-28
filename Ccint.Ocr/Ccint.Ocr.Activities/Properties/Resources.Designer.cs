@@ -79,7 +79,7 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BankCardActivity.
+        ///   Looks up a localized string similar to Bank Card.
         /// </summary>
         public static string BankCardActivity_DisplayName {
             get {
@@ -133,7 +133,7 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BusinessLicenseActivity.
+        ///   Looks up a localized string similar to Business License.
         /// </summary>
         public static string BusinessLicenseActivity_DisplayName {
             get {
@@ -241,7 +241,7 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IdCardActivity.
+        ///   Looks up a localized string similar to ID Card.
         /// </summary>
         public static string IdCardActivity_DisplayName {
             get {
