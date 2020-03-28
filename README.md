@@ -8,10 +8,10 @@
 
 #|名称|类型|活动
 ---|---|---|---
-1|[增值税发票识别](https://ai.ccint.com/api/vision/vat_invoice)|票据|[VatInvoiceActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/VatInvoiceActivity.cs)
-2|[银行卡识别](https://ai.ccint.com/api/vision/bank_card)|卡证|[BankCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BankCardActivity.cs)
-3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|卡证|[BusinessLicenseActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BusinessLicenseActivity.cs)
-4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|卡证|[IdCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/IdCardActivity.cs)
+1|[增值税发票识别](https://ai.ccint.com/api/vision/vat_invoice)|票据类|[VatInvoiceActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/VatInvoiceActivity.cs)
+2|[银行卡识别](https://ai.ccint.com/api/vision/bank_card)|证照类|[BankCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BankCardActivity.cs)
+3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|公司商铺类|[BusinessLicenseActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BusinessLicenseActivity.cs)
+4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|证照类|[IdCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/IdCardActivity.cs)
 
 ## 其他代码库和参考资料
 * [合合文字识别API文档](https://ai.ccint.com/doc/api/general_license_recog/v1.0)
