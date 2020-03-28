@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Testing Framework for UiPath
+/tests/CcintOcrBasicTests/.local
+/tests/CcintOcrBasicTests/.screenshots
+/tests/CcintOcrBasicTests/Tests_Examples_Templates/UnitTest_Examples
