@@ -209,19 +209,19 @@
     <value>Returns the recognized values of a VAT invoice.</value>
     <comment>activity description</comment>
   </data>
-  <data name="VatInvoiceActivity_ImagePath_DisplayName" xml:space="preserve">
+  <data name="BaseOcrActivity_ImagePath_DisplayName" xml:space="preserve">
     <value>ImagePath</value>
     <comment>property name</comment>
   </data>
-  <data name="VatInvoiceActivity_ImagePath_Description" xml:space="preserve">
+  <data name="BaseOcrActivity_ImagePath_Description" xml:space="preserve">
     <value>The file path to the image for recognition.</value>
     <comment>property description</comment>
   </data>
-  <data name="VatInvoiceActivity_Result_DisplayName" xml:space="preserve">
+  <data name="BaseOcrActivity_Result_DisplayName" xml:space="preserve">
     <value>Result</value>
     <comment>property name</comment>
   </data>
-  <data name="VatInvoiceActivity_Result_Description" xml:space="preserve">
+  <data name="BaseOcrActivity_Result_Description" xml:space="preserve">
     <value>The result of the recognition in the form of JSON.</value>
     <comment>property description</comment>
   </data>

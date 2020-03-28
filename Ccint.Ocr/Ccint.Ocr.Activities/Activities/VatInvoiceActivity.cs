@@ -14,69 +14,17 @@ namespace Ccint.Ocr.Activities
 {
     [LocalizedDisplayName(nameof(Resources.VatInvoiceActivity_DisplayName))]
     [LocalizedDescription(nameof(Resources.VatInvoiceActivity_Description))]
-    public class VatInvoiceActivity : ContinuableAsyncCodeActivity
+    public class VatInvoiceActivity : BaseOcrActivity
     {
-        #region Properties
-
-        /// <summary>
-        /// If set, continue executing the remaining activities even if the current activity has failed.
-        /// </summary>
-        [LocalizedCategory(nameof(Resources.Common_Category))]
-        [LocalizedDisplayName(nameof(Resources.ContinueOnError_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
-        public override InArgument<bool> ContinueOnError { get; set; }
-
-        [LocalizedDisplayName(nameof(Resources.VatInvoiceActivity_ImagePath_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VatInvoiceActivity_ImagePath_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> ImagePath { get; set; }
-
-        [LocalizedDisplayName(nameof(Resources.VatInvoiceActivity_Result_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VatInvoiceActivity_Result_Description))]
-        [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<JObject> Result { get; set; }
-
-        #endregion
-
-
-        #region Constructors
-
-        public VatInvoiceActivity()
-        {
-            Constraints.Add(ActivityConstraints.HasParentType<VatInvoiceActivity, CcintOcrScope>(Resources.ValidationScope_Error));
-        }
-
-        #endregion
-
-
         #region Protected Methods
 
-        protected override void CacheMetadata(CodeActivityMetadata metadata)
+        protected override string GetRecognizerName()
         {
-            if (ImagePath == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(ImagePath)));
-
-            base.CacheMetadata(metadata);
-        }
-
-        protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
-        {
-            // Inputs
-            var imagepath = ImagePath.Get(context);
-            var objectContainer = context.GetFromContext<IObjectContainer>(CcintOcrScope.ParentContainerPropertyTag);
-            var ocrService = objectContainer.Get<IOcrService>();
-
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
-            var result = await ocrService.RecognizeAsync(RecognizerNames.VatInvoice, imagepath);
-
-            // Outputs
-            return (ctx) => {
-                Result.Set(ctx, result);
-            };
+            return RecognizerNames.VatInvoice;
         }
 
         #endregion
+
     }
 }
 

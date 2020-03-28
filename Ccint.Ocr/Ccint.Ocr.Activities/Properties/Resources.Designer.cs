@@ -70,6 +70,42 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The file path to the image for recognition..
+        /// </summary>
+        public static string BaseOcrActivity_ImagePath_Description {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_ImagePath_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ImagePath.
+        /// </summary>
+        public static string BaseOcrActivity_ImagePath_DisplayName {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_ImagePath_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The result of the recognition in the form of JSON..
+        /// </summary>
+        public static string BaseOcrActivity_Result_Description {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string BaseOcrActivity_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to App Key.
         /// </summary>
         public static string CcintOcrScope_AppKey_Description {
@@ -264,42 +300,6 @@ namespace Ccint.Ocr.Activities.Properties {
         public static string VatInvoiceActivity_DisplayName {
             get {
                 return ResourceManager.GetString("VatInvoiceActivity_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The file path to the image for recognition..
-        /// </summary>
-        public static string VatInvoiceActivity_ImagePath_Description {
-            get {
-                return ResourceManager.GetString("VatInvoiceActivity_ImagePath_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ImagePath.
-        /// </summary>
-        public static string VatInvoiceActivity_ImagePath_DisplayName {
-            get {
-                return ResourceManager.GetString("VatInvoiceActivity_ImagePath_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The result of the recognition in the form of JSON..
-        /// </summary>
-        public static string VatInvoiceActivity_Result_Description {
-            get {
-                return ResourceManager.GetString("VatInvoiceActivity_Result_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Result.
-        /// </summary>
-        public static string VatInvoiceActivity_Result_DisplayName {
-            get {
-                return ResourceManager.GetString("VatInvoiceActivity_Result_DisplayName", resourceCulture);
             }
         }
     }

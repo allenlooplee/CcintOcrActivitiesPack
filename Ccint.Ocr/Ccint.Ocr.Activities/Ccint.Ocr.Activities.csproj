@@ -53,6 +53,7 @@
     <Compile Include="..\Ccint.OcrAssemblyInfo.cs">
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Activities\BaseOcrActivity.cs" />
     <Compile Include="Activities\CcintOcrScope.cs" />
     <Compile Include="Activities\VatInvoiceActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
