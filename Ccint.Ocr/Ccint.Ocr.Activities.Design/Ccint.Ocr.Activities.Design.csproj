@@ -53,6 +53,9 @@
     <Compile Include="..\Ccint.OcrAssemblyInfo.cs">
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Designers\BankCardActivityDesigner.xaml.cs">
+      <DependentUpon>BankCardActivityDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\CcintOcrScopeDesigner.xaml.cs">
       <DependentUpon>CcintOcrScopeDesigner.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,10 @@
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
       <Link>Themes\Generic.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\BankCardActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
