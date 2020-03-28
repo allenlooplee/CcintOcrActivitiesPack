@@ -1,4 +1,4 @@
-﻿using System.Activities.Presentation.Metadata;
+using System.Activities.Presentation.Metadata;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using Ccint.Ocr.Activities.Design.Designers;
@@ -19,6 +19,26 @@ namespace Ccint.Ocr.Activities.Design
 
             #endregion Setup
 
+
+            builder.AddCustomAttributes(typeof(CcintOcrScope), categoryAttribute);
+            builder.AddCustomAttributes(typeof(CcintOcrScope), new DesignerAttribute(typeof(CcintOcrScopeDesigner)));
+            builder.AddCustomAttributes(typeof(CcintOcrScope), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(BankCardActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BankCardActivity), new DesignerAttribute(typeof(BankCardActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BankCardActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new DesignerAttribute(typeof(BusinessLicenseActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(IdCardActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(IdCardActivity), new DesignerAttribute(typeof(IdCardActivityDesigner)));
+            builder.AddCustomAttributes(typeof(IdCardActivity), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());

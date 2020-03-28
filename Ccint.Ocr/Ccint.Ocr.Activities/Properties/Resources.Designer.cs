@@ -59,7 +59,124 @@ namespace Ccint.Ocr.Activities.Properties {
                 resourceCulture = value;
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authentication.
+        /// </summary>
+        public static string Authentication_Category {
+            get {
+                return ResourceManager.GetString("Authentication_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a bank card..
+        /// </summary>
+        public static string BankCardActivity_Description {
+            get {
+                return ResourceManager.GetString("BankCardActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bank Card.
+        /// </summary>
+        public static string BankCardActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BankCardActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file path to the image for recognition..
+        /// </summary>
+        public static string BaseOcrActivity_ImagePath_Description {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_ImagePath_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ImagePath.
+        /// </summary>
+        public static string BaseOcrActivity_ImagePath_DisplayName {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_ImagePath_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The result of the recognition in the form of JSON..
+        /// </summary>
+        public static string BaseOcrActivity_Result_Description {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string BaseOcrActivity_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("BaseOcrActivity_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a business license..
+        /// </summary>
+        public static string BusinessLicenseActivity_Description {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Business License.
+        /// </summary>
+        public static string BusinessLicenseActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contains and authenticates all Ccint OCR activities..
+        /// </summary>
+        public static string CcintOcrScope_Description {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ccint OCR Scope.
+        /// </summary>
+        public static string CcintOcrScope_DisplayName {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recognizer config.
+        /// </summary>
+        public static string CcintOcrScope_RecognizerConfig_Description {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RecognizerConfig.
+        /// </summary>
+        public static string CcintOcrScope_RecognizerConfig_DisplayName {
+            get {
+                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_DisplayName", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Common.
         /// </summary>
@@ -86,7 +203,7 @@ namespace Ccint.Ocr.Activities.Properties {
                 return ResourceManager.GetString("ContinueOnError_DisplayName", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
@@ -95,7 +212,52 @@ namespace Ccint.Ocr.Activities.Properties {
                 return ResourceManager.GetString("Do", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a ID card..
+        /// </summary>
+        public static string IdCardActivity_Description {
+            get {
+                return ResourceManager.GetString("IdCardActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Card.
+        /// </summary>
+        public static string IdCardActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("IdCardActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input.
+        /// </summary>
+        public static string Input_Category {
+            get {
+                return ResourceManager.GetString("Input_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        public static string Options_Category {
+            get {
+                return ResourceManager.GetString("Options_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Output.
+        /// </summary>
+        public static string Output_Category {
+            get {
+                return ResourceManager.GetString("Output_Category", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute)..
         /// </summary>
@@ -104,7 +266,7 @@ namespace Ccint.Ocr.Activities.Properties {
                 return ResourceManager.GetString("Timeout_Description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Timeout (milliseconds).
         /// </summary>
@@ -112,17 +274,69 @@ namespace Ccint.Ocr.Activities.Properties {
             get {
                 return ResourceManager.GetString("Timeout_DisplayName", resourceCulture);
             }
-    }
-
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to The activity timed out and was canceled..
         /// </summary>
-        public static string Timeout_Error
-        {
-            get
-            {
+        public static string Timeout_Error {
+            get {
                 return ResourceManager.GetString("Timeout_Error", resourceCulture);
             }
         }
-}
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a value either for {0} or {1}, but not both..
+        /// </summary>
+        public static string ValidationExclusiveProperties_Error {
+            get {
+                return ResourceManager.GetString("ValidationExclusiveProperties_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide values for both {0} and {1}..
+        /// </summary>
+        public static string ValidationOverloadGroup_Error {
+            get {
+                return ResourceManager.GetString("ValidationOverloadGroup_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot be used outside of a {0}..
+        /// </summary>
+        public static string ValidationScope_Error {
+            get {
+                return ResourceManager.GetString("ValidationScope_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a value for {0}..
+        /// </summary>
+        public static string ValidationValue_Error {
+            get {
+                return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a VAT invoice..
+        /// </summary>
+        public static string VatInvoiceActivity_Description {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VAT Invoice.
+        /// </summary>
+        public static string VatInvoiceActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_DisplayName", resourceCulture);
+            }
+        }
+    }
 }
