@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UnitTests" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,2611.5" sap2010:WorkflowViewState.IdRef="ParsingTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:coa="clr-namespace:Ccint.Ocr.Activities;assembly=Ccint.Ocr.Activities" xmlns:cv="clr-namespace:CustomActivities.VariableComparer;assembly=CustomActivities.VariableComparer" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Ccint.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UnitTests" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,2303.5" sap2010:WorkflowViewState.IdRef="ParsingTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:coa="clr-namespace:Ccint.Ocr.Activities;assembly=Ccint.Ocr.Activities" xmlns:cv="clr-namespace:CustomActivities.VariableComparer;assembly=CustomActivities.VariableComparer" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Ccint.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -53,13 +53,12 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Unit testing comprises of three stages: &#xA;&#xA;       - Arrange&#xA;       - Act&#xA;       - Assert. &#xA;&#xA;Basic idea of Unit Testing is to arrange a set of data that will be used to test the code. Using that data, tested code is run and the result is assigned to the &quot;actual&quot; variable. Result of the test run is then asserted to see if test have passed or not (usually this is done by comparing &quot;actual&quot; value with the &quot;expected&quot;).&#xA;&#xA;Tests can be constructed to test &quot;happy&quot; paths, fail paths and/or to check if the correct exceptions are thrown by the code.&#xA;&#xA;It is recommended to make more than one test for each peace of the code. This is to make sure that the code correctly handles both good and bad data, and also to see if correct exceptions are thrown by the code.&#xA;&#xA;IMPORTANT: For Unit Test to be eligible for use in TestingFramework it must implement Assert Unit Test activity that can be found in CustomActivities.VariableComparer namespace." DisplayName="Unit Test" sap:VirtualizedContainerService.HintSize="518,2511.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Unit testing comprises of three stages: &#xA;&#xA;       - Arrange&#xA;       - Act&#xA;       - Assert. &#xA;&#xA;Basic idea of Unit Testing is to arrange a set of data that will be used to test the code. Using that data, tested code is run and the result is assigned to the &quot;actual&quot; variable. Result of the test run is then asserted to see if test have passed or not (usually this is done by comparing &quot;actual&quot; value with the &quot;expected&quot;).&#xA;&#xA;Tests can be constructed to test &quot;happy&quot; paths, fail paths and/or to check if the correct exceptions are thrown by the code.&#xA;&#xA;It is recommended to make more than one test for each peace of the code. This is to make sure that the code correctly handles both good and bad data, and also to see if correct exceptions are thrown by the code.&#xA;&#xA;IMPORTANT: For Unit Test to be eligible for use in TestingFramework it must implement Assert Unit Test activity that can be found in CustomActivities.VariableComparer namespace." DisplayName="Unit Test" sap:VirtualizedContainerService.HintSize="518,2203.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="expected" />
       <Variable x:TypeArguments="x:String" Name="actual" />
-      <Variable x:TypeArguments="x:String" Default="Tests_Data\config\AppKeys.xlsx" Name="configPath" />
-      <Variable x:TypeArguments="x:String" Name="appKey" />
-      <Variable x:TypeArguments="x:String" Name="appSecret" />
+      <Variable x:TypeArguments="x:String" Default="Tests_Data\config\recognizer_config.xlsx" Name="configPath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="recognizerConfig" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -67,7 +66,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Purpose of the arrange stage is to define input parameters for the test and expected result of the test run:&#xA;&#xA;     - Manually define input data&#xA;     - (If needed) Define expected result&#xA;     - (If needed) Read configuration file" DisplayName="Arrange" sap:VirtualizedContainerService.HintSize="476,963.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="Purpose of the arrange stage is to define input parameters for the test and expected result of the test run:&#xA;&#xA;     - Manually define input data&#xA;     - (If needed) Define expected result&#xA;     - (If needed) Read configuration file" DisplayName="Arrange" sap:VirtualizedContainerService.HintSize="476,655.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -75,48 +74,26 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Load Config" sap:VirtualizedContainerService.HintSize="434,663.5" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[configPath]">
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Load Config" sap:VirtualizedContainerService.HintSize="434,355.5" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[configPath]">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,554.5" sap2010:WorkflowViewState.IdRef="Sequence_7">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="sd:DataTable" Name="appKeys" />
-                <Variable x:TypeArguments="sd:DataRow" Name="targetRow" />
-              </Sequence.Variables>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,246.5" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:Comment sap:VirtualizedContainerService.HintSize="334,55.5" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Pre-condition: config path exists" />
-              <ui:ExcelReadRange AddHeaders="True" DataTable="[appKeys]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[recognizerConfig]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
                 <ui:ExcelReadRange.Range>
                   <InArgument x:TypeArguments="x:String">
                     <Literal x:TypeArguments="x:String" Value="" />
                   </InArgument>
                 </ui:ExcelReadRange.Range>
               </ui:ExcelReadRange>
-              <Assign DisplayName="Take the first row" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="sd:DataRow">[targetRow]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="sd:DataRow">[appKeys.Rows(0)]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="AppKey" DisplayName="Get app key" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[targetRow]">
-                <ui:GetRowItem.Value>
-                  <OutArgument x:TypeArguments="x:String">[appKey]</OutArgument>
-                </ui:GetRowItem.Value>
-              </ui:GetRowItem>
-              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="AppSecret" DisplayName="Get app secret" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[targetRow]">
-                <ui:GetRowItem.Value>
-                  <OutArgument x:TypeArguments="x:String">[appSecret]</OutArgument>
-                </ui:GetRowItem.Value>
-              </ui:GetRowItem>
             </Sequence>
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
@@ -144,7 +121,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <coa:CcintOcrScope ContinueOnError="{x:Null}" AppKey="[appKey]" AppSecret="[appSecret]" DisplayName="Ccint OCR Scope" sap:VirtualizedContainerService.HintSize="434,300" sap2010:WorkflowViewState.IdRef="CcintOcrScope_1">
+      <coa:CcintOcrScope ContinueOnError="{x:Null}" DisplayName="Ccint OCR Scope" sap:VirtualizedContainerService.HintSize="434,300" sap2010:WorkflowViewState.IdRef="CcintOcrScope_1" RecognizerConfig="[recognizerConfig]">
         <coa:CcintOcrScope.Body>
           <ActivityAction x:TypeArguments="usa:IObjectContainer">
             <ActivityAction.Argument>
