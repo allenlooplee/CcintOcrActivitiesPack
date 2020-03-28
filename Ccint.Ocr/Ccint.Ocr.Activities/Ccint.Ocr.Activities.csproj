@@ -57,6 +57,7 @@
     <Compile Include="Activities\BaseOcrActivity.cs" />
     <Compile Include="Activities\BusinessLicenseActivity.cs" />
     <Compile Include="Activities\CcintOcrScope.cs" />
+    <Compile Include="Activities\IdCardActivity.cs" />
     <Compile Include="Activities\VatInvoiceActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\SharedResources.cs" />
