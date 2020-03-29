@@ -2,7 +2,7 @@
 
 [合合AI开放平台](https://ai.ccint.com/)提供多种OCR，如增值税发票、营业执照、驾驶证等，可以用于多种RPA流程。本代码库参照[百度文字识别活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)的设计，打通UiPath和合合OCR，让开发者能在UiPath Studio中通过简单的拖放和设置把合合OCR用到相关流程中，从而加速开发过程。
 
-## 文字识别活动
+## OCR活动清单
 
 本活动第一期将会包含有以下OCR活动，其他OCR活动将会陆续发布：
 
