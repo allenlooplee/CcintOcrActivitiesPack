@@ -353,3 +353,4 @@ MigrationBackup/
 /tests/CcintOcrBasicTests/.local
 /tests/CcintOcrBasicTests/.screenshots
 /tests/CcintOcrBasicTests/Tests_Examples_Templates/UnitTest_Examples
+/templates/CcintOcrBasicProcess/.local
