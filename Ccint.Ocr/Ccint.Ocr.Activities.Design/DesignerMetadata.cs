@@ -40,6 +40,10 @@ namespace Ccint.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(IdCardActivity), new DesignerAttribute(typeof(IdCardActivityDesigner)));
             builder.AddCustomAttributes(typeof(IdCardActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(AutoReceiptActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(AutoReceiptActivity), new DesignerAttribute(typeof(AutoReceiptActivityDesigner)));
+            builder.AddCustomAttributes(typeof(AutoReceiptActivity), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

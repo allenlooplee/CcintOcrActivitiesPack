@@ -241,4 +241,12 @@
     <value>Returns the recognized values of a ID card.</value>
     <comment>activity description</comment>
   </data>
+  <data name="AutoReceiptActivity_DisplayName" xml:space="preserve">
+    <value>Auto Receipt</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="AutoReceiptActivity_Description" xml:space="preserve">
+    <value>Automatically classifies and returns the recognized values of a receipt.</value>
+    <comment>activity description</comment>
+  </data>
 </root>

@@ -53,6 +53,9 @@
     <Compile Include="..\Ccint.OcrAssemblyInfo.cs">
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Designers\AutoReceiptActivityDesigner.xaml.cs">
+      <DependentUpon>AutoReceiptActivityDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\BankCardActivityDesigner.xaml.cs">
       <DependentUpon>BankCardActivityDesigner.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
       <Link>Themes\Generic.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\AutoReceiptActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

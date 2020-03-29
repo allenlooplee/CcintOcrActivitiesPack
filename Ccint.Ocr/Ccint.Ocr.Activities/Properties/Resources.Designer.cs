@@ -70,6 +70,24 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Automatically classifies and returns the recognized values of a receipt..
+        /// </summary>
+        public static string AutoReceiptActivity_Description {
+            get {
+                return ResourceManager.GetString("AutoReceiptActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Receipt.
+        /// </summary>
+        public static string AutoReceiptActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("AutoReceiptActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns the recognized values of a bank card..
         /// </summary>
         public static string BankCardActivity_Description {

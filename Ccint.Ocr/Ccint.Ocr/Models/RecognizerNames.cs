@@ -12,5 +12,6 @@ namespace Ccint.Ocr.Models
         public const string BankCard = "bank_card";
         public const string BusinessLicense = "business_license";
         public const string IdCard = "id_card";
+        public const string AutoReceipt = "auto_receipt";
     }
 }
