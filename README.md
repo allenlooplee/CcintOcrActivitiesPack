@@ -22,6 +22,7 @@
 2|[银行卡识别](https://ai.ccint.com/api/vision/bank_card)|证照类|[BankCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BankCardActivity.cs)
 3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|公司商铺类|[BusinessLicenseActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BusinessLicenseActivity.cs)
 4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|证照类|[IdCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/IdCardActivity.cs)
+5|[票据机器人](https://ai.ccint.com/api/vision/general_receipt_recog)|智能技术|[AutoReceiptActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/AutoReceiptActivity.cs)
 
 ## 其他代码库和参考资料
 * [合合文字识别API文档](https://ai.ccint.com/doc/api/general_license_recog/v1.0)
