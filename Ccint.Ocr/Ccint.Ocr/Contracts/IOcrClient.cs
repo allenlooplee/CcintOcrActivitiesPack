@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Ccint.Ocr.Contracts
 {
-    public interface IOcrService
+    public interface IOcrClient
     {
         string Name { get; }
 

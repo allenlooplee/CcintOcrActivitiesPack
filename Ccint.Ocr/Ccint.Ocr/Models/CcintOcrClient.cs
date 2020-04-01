@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Ccint.Ocr.Models
 {
-    public class CcintOcrService : IOcrService
+    public class CcintOcrClient : IOcrClient
     {
-        public CcintOcrService(DataTable recognizerConfig)
+        public CcintOcrClient(DataTable recognizerConfig)
         {
             Name = "Ccint OCR";
             _recognizerConfig = recognizerConfig;

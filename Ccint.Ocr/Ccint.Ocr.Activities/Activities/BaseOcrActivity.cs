@@ -64,13 +64,13 @@ namespace Ccint.Ocr.Activities
             // Inputs
             var imagepath = ImagePath.Get(context);
             var objectContainer = context.GetFromContext<IObjectContainer>(CcintOcrScope.ParentContainerPropertyTag);
-            var ocrService = objectContainer.Get<IOcrService>();
+            var ocrClient = objectContainer.Get<IOcrClient>();
 
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
             var recognizerName = GetRecognizerName();
-            var result = await ocrService.RecognizeAsync(recognizerName, imagepath);
+            var result = await ocrClient.RecognizeAsync(recognizerName, imagepath);
 
             // Outputs
             return (ctx) => {

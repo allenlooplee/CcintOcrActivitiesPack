@@ -79,8 +79,8 @@ namespace Ccint.Ocr.Activities
             // Inputs
             var recognizerConfig = RecognizerConfig.Get(context);
 
-            IOcrService ocrService = new CcintOcrService(recognizerConfig);
-            _objectContainer.Add(ocrService);
+            IOcrClient ocrClient = new CcintOcrClient(recognizerConfig);
+            _objectContainer.Add(ocrClient);
 
             return (ctx) => {
                 // Schedule child activities
