@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,788.5" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:coa="clr-namespace:Ccint.Ocr.Activities;assembly=Ccint.Ocr.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Ccint.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,788.5" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:coa="clr-namespace:Cloud.Ocr.Activities;assembly=Cloud.Ocr.Activities" xmlns:coa1="clr-namespace:Ccint.Ocr.Activities;assembly=Ccint.Ocr.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Cloud.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities.XamlIntegration</x:String>
@@ -78,7 +78,7 @@
           <av:PointCollection x:Key="ConnectorLocation">360,313.5 360,363.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="This step checks the next image to process, and assign its path to imagePath variable if any." DisplayName="Load Image" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence sap2010:Annotation.AnnotationText="This step checks the next image to process, and assign its path to imagePath variable if any." DisplayName="Load Image" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -126,20 +126,20 @@
                   <av:PointCollection x:Key="ConnectorLocation">50,520 20,520 20,279.5 260,279.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="This step recognizes the image, uses the result, and post-process the image (e.g. archive the image)." DisplayName="Process Image" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence sap2010:Annotation.AnnotationText="This step recognizes the image, uses the result, and post-process the image (e.g. archive the image)." DisplayName="Process Image" sap:VirtualizedContainerService.HintSize="476,490" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <coa:CcintOcrScope ContinueOnError="{x:Null}" DisplayName="Ccint OCR Scope" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="CcintOcrScope_1" RecognizerConfig="[recognizerConfig]">
-                  <coa:CcintOcrScope.Body>
+                <coa:OcrScope ContinueOnError="{x:Null}" DisplayName="OCR Scope" sap:VirtualizedContainerService.HintSize="434,398" sap2010:WorkflowViewState.IdRef="OcrScope_1">
+                  <coa:OcrScope.Body>
                     <ActivityAction x:TypeArguments="usa:IObjectContainer">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="CcintScope" />
+                        <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="OcrScope" />
                       </ActivityAction.Argument>
-                      <Sequence sap2010:Annotation.AnnotationText="Drop the OCR activity you want to use here. The Bank Card here is just for demostration." DisplayName="Do" sap:VirtualizedContainerService.HintSize="304,258" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="njl:JObject" Name="ocrResult" />
                           <Variable x:TypeArguments="ui:GenericValue" Name="cardNumber" />
@@ -147,8 +147,6 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <coa:BankCardActivity ContinueOnError="{x:Null}" DisplayName="Bank Card" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="BankCardActivity_1" ImagePath="[imagePath]" Result="[ocrResult]" />
@@ -162,8 +160,16 @@
                         </Assign>
                       </Sequence>
                     </ActivityAction>
-                  </coa:CcintOcrScope.Body>
-                </coa:CcintOcrScope>
+                  </coa:OcrScope.Body>
+                  <coa:OcrScope.OcrClient>
+                    <ActivityAction x:TypeArguments="usa:IObjectContainer">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="OcrScope" />
+                      </ActivityAction.Argument>
+                      <coa1:CcintOcrClientActivity ContinueOnError="{x:Null}" DisplayName="Ccint OCR Client" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="CcintOcrClientActivity_1" RecognizerConfig="[recognizerConfig]" />
+                    </ActivityAction>
+                  </coa:OcrScope.OcrClient>
+                </coa:OcrScope>
               </Sequence>
               <FlowStep.Next>
                 <x:Reference>__ReferenceID0</x:Reference>

@@ -22,7 +22,7 @@ namespace Ccint.Ocr.Activities.Design.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Ccint.Ocr.Activities.Design.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Ccint.Ocr.Activities.Design.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Ccint.Ocr.Activities.Design.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -59,69 +59,57 @@ namespace Ccint.Ocr.Activities.Design.Properties {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Ccint.Ocr.
+        ///   Looks up a localized string similar to Ccint.OCR.
         /// </summary>
-        public static string Category
-        {
-            get
-            {
+        internal static string Category {
+            get {
                 return ResourceManager.GetString("Category", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Collection.
         /// </summary>
-        public static string Collection
-        {
-            get
-            {
+        internal static string Collection {
+            get {
                 return ResourceManager.GetString("Collection", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
-        public static string Do
-        {
-            get
-            {
+        internal static string Do {
+            get {
                 return ResourceManager.GetString("Do", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Double-click to view.
         /// </summary>
-        public static string DoubleClickToView
-        {
-            get
-            {
+        internal static string DoubleClickToView {
+            get {
                 return ResourceManager.GetString("DoubleClickToView", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Drop Activity Here.
         /// </summary>
-        public static string DropActivityHere
-        {
-            get
-            {
+        internal static string DropActivityHere {
+            get {
                 return ResourceManager.GetString("DropActivityHere", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Editing.
         /// </summary>
-        public static string Editing
-        {
-            get
-            {
+        internal static string Editing {
+            get {
                 return ResourceManager.GetString("Editing", resourceCulture);
             }
         }
