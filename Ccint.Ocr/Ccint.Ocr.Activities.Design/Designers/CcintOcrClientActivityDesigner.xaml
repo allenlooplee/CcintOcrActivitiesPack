@@ -1,4 +1,4 @@
-<sap:ActivityDesigner x:Class="Ccint.Ocr.Activities.Design.Designers.AutoReceiptActivityDesigner"
+<sap:ActivityDesigner x:Class="Ccint.Ocr.Activities.Design.Designers.CcintOcrClientActivityDesigner"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:activity="clr-namespace:Ccint.Ocr.Activities.Properties;assembly=Ccint.Ocr.Activities"

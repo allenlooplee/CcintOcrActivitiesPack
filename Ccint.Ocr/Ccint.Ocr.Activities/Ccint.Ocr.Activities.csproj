@@ -31,10 +31,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cloud.Ocr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.dll</HintPath>
+    </Reference>
+    <Reference Include="Cloud.Ocr.Activities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="Cloud.Ocr.Activities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.Presentation" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,10 +67,8 @@
       <Link>Properties\Ccint.OcrAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Activities\AutoReceiptActivity.cs" />
-    <Compile Include="Activities\BankCardActivity.cs" />
-    <Compile Include="Activities\BaseOcrActivity.cs" />
     <Compile Include="Activities\BusinessLicenseActivity.cs" />
-    <Compile Include="Activities\CcintOcrScope.cs" />
+    <Compile Include="Activities\CcintOcrClientActivity.cs" />
     <Compile Include="Activities\IdCardActivity.cs" />
     <Compile Include="Activities\VatInvoiceActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,7 +97,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\..\Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

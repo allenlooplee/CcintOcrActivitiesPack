@@ -1,16 +1,12 @@
-using System;
-using System.Activities;
-using System.Threading;
-using System.Threading.Tasks;
 using Ccint.Ocr.Activities.Properties;
-using Ccint.Ocr.Models;
-using UiPath.Shared.Activities;
+using Cloud.Ocr.Models;
+using Cloud.Ocr.Contracts;
 using UiPath.Shared.Activities.Localization;
 
 namespace Ccint.Ocr.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.IdCardActivity_DisplayName))]
-    [LocalizedDescription(nameof(Resources.IdCardActivity_Description))]
+    [LocalizedDisplayName(nameof(Resources.IdCardActivity_DisplayName), typeof(Resources))]
+    [LocalizedDescription(nameof(Resources.IdCardActivity_Description), typeof(Resources))]
     public class IdCardActivity : BaseOcrActivity
     {
         protected override string GetRecognizerName()

@@ -88,60 +88,6 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Returns the recognized values of a bank card..
-        /// </summary>
-        public static string BankCardActivity_Description {
-            get {
-                return ResourceManager.GetString("BankCardActivity_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bank Card.
-        /// </summary>
-        public static string BankCardActivity_DisplayName {
-            get {
-                return ResourceManager.GetString("BankCardActivity_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The file path to the image for recognition..
-        /// </summary>
-        public static string BaseOcrActivity_ImagePath_Description {
-            get {
-                return ResourceManager.GetString("BaseOcrActivity_ImagePath_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ImagePath.
-        /// </summary>
-        public static string BaseOcrActivity_ImagePath_DisplayName {
-            get {
-                return ResourceManager.GetString("BaseOcrActivity_ImagePath_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The result of the recognition in the form of JSON..
-        /// </summary>
-        public static string BaseOcrActivity_Result_Description {
-            get {
-                return ResourceManager.GetString("BaseOcrActivity_Result_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Result.
-        /// </summary>
-        public static string BaseOcrActivity_Result_DisplayName {
-            get {
-                return ResourceManager.GetString("BaseOcrActivity_Result_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Returns the recognized values of a business license..
         /// </summary>
         public static string BusinessLicenseActivity_Description {
@@ -160,38 +106,38 @@ namespace Ccint.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contains and authenticates all Ccint OCR activities..
+        ///   Looks up a localized string similar to Injects CcintOcrClient as IOcrClient to IObjectContainer passed from OcrScope..
         /// </summary>
-        public static string CcintOcrScope_Description {
+        public static string CcintOcrClientActivity_Description {
             get {
-                return ResourceManager.GetString("CcintOcrScope_Description", resourceCulture);
+                return ResourceManager.GetString("CcintOcrClientActivity_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ccint OCR Scope.
+        ///   Looks up a localized string similar to Ccint OCR Client.
         /// </summary>
-        public static string CcintOcrScope_DisplayName {
+        public static string CcintOcrClientActivity_DisplayName {
             get {
-                return ResourceManager.GetString("CcintOcrScope_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CcintOcrClientActivity_DisplayName", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Recognizer config.
         /// </summary>
-        public static string CcintOcrScope_RecognizerConfig_Description {
+        public static string CcintOcrClientActivity_RecognizerConfig_Description {
             get {
-                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_Description", resourceCulture);
+                return ResourceManager.GetString("CcintOcrClientActivity_RecognizerConfig_Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to RecognizerConfig.
         /// </summary>
-        public static string CcintOcrScope_RecognizerConfig_DisplayName {
+        public static string CcintOcrClientActivity_RecognizerConfig_DisplayName {
             get {
-                return ResourceManager.GetString("CcintOcrScope_RecognizerConfig_DisplayName", resourceCulture);
+                return ResourceManager.GetString("CcintOcrClientActivity_RecognizerConfig_DisplayName", resourceCulture);
             }
         }
         

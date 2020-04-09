@@ -177,19 +177,11 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="CcintOcrScope_DisplayName" xml:space="preserve">
-    <value>Ccint OCR Scope</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="CcintOcrScope_Description" xml:space="preserve">
-    <value>Contains and authenticates all Ccint OCR activities.</value>
-    <comment>activity description</comment>
-  </data>
-  <data name="CcintOcrScope_RecognizerConfig_DisplayName" xml:space="preserve">
+  <data name="CcintOcrClientActivity_RecognizerConfig_DisplayName" xml:space="preserve">
     <value>RecognizerConfig</value>
     <comment>property name</comment>
   </data>
-  <data name="CcintOcrScope_RecognizerConfig_Description" xml:space="preserve">
+  <data name="CcintOcrClientActivity_RecognizerConfig_Description" xml:space="preserve">
     <value>Recognizer config</value>
     <comment>property description</comment>
   </data>
@@ -199,30 +191,6 @@
   </data>
   <data name="VatInvoiceActivity_Description" xml:space="preserve">
     <value>Returns the recognized values of a VAT invoice.</value>
-    <comment>activity description</comment>
-  </data>
-  <data name="BaseOcrActivity_ImagePath_DisplayName" xml:space="preserve">
-    <value>ImagePath</value>
-    <comment>property name</comment>
-  </data>
-  <data name="BaseOcrActivity_ImagePath_Description" xml:space="preserve">
-    <value>The file path to the image for recognition.</value>
-    <comment>property description</comment>
-  </data>
-  <data name="BaseOcrActivity_Result_DisplayName" xml:space="preserve">
-    <value>Result</value>
-    <comment>property name</comment>
-  </data>
-  <data name="BaseOcrActivity_Result_Description" xml:space="preserve">
-    <value>The result of the recognition in the form of JSON.</value>
-    <comment>property description</comment>
-  </data>
-  <data name="BankCardActivity_DisplayName" xml:space="preserve">
-    <value>Bank Card</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="BankCardActivity_Description" xml:space="preserve">
-    <value>Returns the recognized values of a bank card.</value>
     <comment>activity description</comment>
   </data>
   <data name="BusinessLicenseActivity_DisplayName" xml:space="preserve">
@@ -247,6 +215,14 @@
   </data>
   <data name="AutoReceiptActivity_Description" xml:space="preserve">
     <value>Automatically classifies and returns the recognized values of a receipt.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="CcintOcrClientActivity_DisplayName" xml:space="preserve">
+    <value>Ccint OCR Client</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="CcintOcrClientActivity_Description" xml:space="preserve">
+    <value>Injects CcintOcrClient as IOcrClient to IObjectContainer passed from OcrScope.</value>
     <comment>activity description</comment>
   </data>
 </root>

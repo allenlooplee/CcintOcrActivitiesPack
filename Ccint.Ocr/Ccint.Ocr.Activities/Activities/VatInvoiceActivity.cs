@@ -1,19 +1,12 @@
-using System;
-using System.Activities;
-using System.Threading;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
 using Ccint.Ocr.Activities.Properties;
-using UiPath.Shared.Activities;
+using Cloud.Ocr.Models;
+using Cloud.Ocr.Contracts;
 using UiPath.Shared.Activities.Localization;
-using UiPath.Shared.Activities.Utilities;
-using Ccint.Ocr.Models;
-using Ccint.Ocr.Contracts;
 
 namespace Ccint.Ocr.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.VatInvoiceActivity_DisplayName))]
-    [LocalizedDescription(nameof(Resources.VatInvoiceActivity_Description))]
+    [LocalizedDisplayName(nameof(Resources.VatInvoiceActivity_DisplayName), typeof(Resources))]
+    [LocalizedDescription(nameof(Resources.VatInvoiceActivity_Description), typeof(Resources))]
     public class VatInvoiceActivity : BaseOcrActivity
     {
         protected override string GetRecognizerName()

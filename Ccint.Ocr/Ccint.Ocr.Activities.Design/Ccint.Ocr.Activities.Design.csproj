@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cloud.Ocr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.dll</HintPath>
+    </Reference>
+    <Reference Include="Cloud.Ocr.Activities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="Cloud.Ocr.Activities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,14 +65,11 @@
     <Compile Include="Designers\AutoReceiptActivityDesigner.xaml.cs">
       <DependentUpon>AutoReceiptActivityDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Designers\BankCardActivityDesigner.xaml.cs">
-      <DependentUpon>BankCardActivityDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Designers\BusinessLicenseActivityDesigner.xaml.cs">
       <DependentUpon>BusinessLicenseActivityDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Designers\CcintOcrScopeDesigner.xaml.cs">
-      <DependentUpon>CcintOcrScopeDesigner.xaml</DependentUpon>
+    <Compile Include="Designers\CcintOcrClientActivityDesigner.xaml.cs">
+      <DependentUpon>CcintOcrClientActivityDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Designers\IdCardActivityDesigner.xaml.cs">
       <DependentUpon>IdCardActivityDesigner.xaml</DependentUpon>
@@ -82,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Ccint.Ocr.Activities.Design.nuspec" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.*.resx">
@@ -102,15 +109,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Designers\BankCardActivityDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Designers\BusinessLicenseActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Designers\CcintOcrScopeDesigner.xaml">
+    <Page Include="Designers\CcintOcrClientActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -133,7 +136,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <Import Project="..\..\Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

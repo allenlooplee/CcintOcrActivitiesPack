@@ -1,16 +1,12 @@
-using System;
-using System.Activities;
-using System.Threading;
-using System.Threading.Tasks;
 using Ccint.Ocr.Activities.Properties;
 using Ccint.Ocr.Models;
-using UiPath.Shared.Activities;
+using Cloud.Ocr.Contracts;
 using UiPath.Shared.Activities.Localization;
 
 namespace Ccint.Ocr.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.AutoReceiptActivity_DisplayName))]
-    [LocalizedDescription(nameof(Resources.AutoReceiptActivity_Description))]
+    [LocalizedDisplayName(nameof(Resources.AutoReceiptActivity_DisplayName), typeof(Resources))]
+    [LocalizedDescription(nameof(Resources.AutoReceiptActivity_Description), typeof(Resources))]
     public class AutoReceiptActivity : BaseOcrActivity
     {
         protected override string GetRecognizerName()

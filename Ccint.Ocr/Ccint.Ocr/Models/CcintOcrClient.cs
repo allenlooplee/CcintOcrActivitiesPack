@@ -1,4 +1,4 @@
-﻿using Ccint.Ocr.Contracts;
+﻿using Cloud.Ocr.Contracts;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
