@@ -20,8 +20,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
-		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{54dcd9ad-f9fc-48d8-941a-c6b77c572798}*SharedItemsImports = 4
-		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{bcaf0c2c-1870-4982-9e8d-4c7732993841}*SharedItemsImports = 4
 		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,8 +5,8 @@
                       xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
                       xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
                       xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
-                      xmlns:converters="clr-namespace:UiPath.Shared.Activities.Design.Converters"
-                      xmlns:uip="clr-namespace:UiPath.Shared.Activities.Design.Controls">
+                      xmlns:converters="clr-namespace:UiPath.Shared.Activities.Design.Converters;assembly=Cloud.Ocr.Activities.Design"
+                      xmlns:uip="clr-namespace:UiPath.Shared.Activities.Design.Controls;assembly=Cloud.Ocr.Activities.Design">
 
     <sap:ActivityDesigner.Resources>
         <ResourceDictionary>

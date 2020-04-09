@@ -19,18 +19,9 @@ namespace Ccint.Ocr.Activities.Design
 
             #endregion Setup
 
-
-            builder.AddCustomAttributes(typeof(CcintOcrScope), categoryAttribute);
-            builder.AddCustomAttributes(typeof(CcintOcrScope), new DesignerAttribute(typeof(CcintOcrScopeDesigner)));
-            builder.AddCustomAttributes(typeof(CcintOcrScope), new HelpKeywordAttribute(""));
-
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(BankCardActivity), categoryAttribute);
-            builder.AddCustomAttributes(typeof(BankCardActivity), new DesignerAttribute(typeof(BankCardActivityDesigner)));
-            builder.AddCustomAttributes(typeof(BankCardActivity), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(BusinessLicenseActivity), categoryAttribute);
             builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new DesignerAttribute(typeof(BusinessLicenseActivityDesigner)));
@@ -43,6 +34,10 @@ namespace Ccint.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(AutoReceiptActivity), categoryAttribute);
             builder.AddCustomAttributes(typeof(AutoReceiptActivity), new DesignerAttribute(typeof(AutoReceiptActivityDesigner)));
             builder.AddCustomAttributes(typeof(AutoReceiptActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(CcintOcrClientActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(CcintOcrClientActivity), new DesignerAttribute(typeof(CcintOcrClientActivityDesigner)));
+            builder.AddCustomAttributes(typeof(CcintOcrClientActivity), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
