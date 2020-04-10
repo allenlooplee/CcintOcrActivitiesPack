@@ -22,7 +22,7 @@
 
 ## 处理图片序列（Process Image）
 
-这个步骤负责执行指定的OCR活动，从识别结果中提取所需信息，并对已处理的图片进行归档。这个步骤已经包含Ccint OCR Scope活动，并设置了“初始化序列”加载的recognizer config。你只需把用于示例的Bank Card活动换成你想使用的OCR活动，并设置图片路径就行了。
+这个步骤负责执行指定的OCR活动，从识别结果中提取所需信息，并对已处理的图片进行归档。这个步骤已经包含Cloud OCR Activities Pack的OCR Scope活动，并设置了“初始化序列”加载的recognizer config。你只需把用于示例的Bank Card活动换成你想使用的OCR活动，并设置图片路径就行了。
 
 ## 结束序列（Finalize）
 
