@@ -32,13 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cloud.Ocr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.41043713\lib\net461\Cloud.Ocr.dll</HintPath>
     </Reference>
     <Reference Include="Cloud.Ocr.Activities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.41043713\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
     </Reference>
     <Reference Include="Cloud.Ocr.Activities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.409125326\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.1.0.41043713\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -65,17 +65,8 @@
     <Compile Include="Designers\AutoReceiptActivityDesigner.xaml.cs">
       <DependentUpon>AutoReceiptActivityDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Designers\BusinessLicenseActivityDesigner.xaml.cs">
-      <DependentUpon>BusinessLicenseActivityDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Designers\CcintOcrClientActivityDesigner.xaml.cs">
       <DependentUpon>CcintOcrClientActivityDesigner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Designers\IdCardActivityDesigner.xaml.cs">
-      <DependentUpon>IdCardActivityDesigner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Designers\VatInvoiceActivityDesigner.xaml.cs">
-      <DependentUpon>VatInvoiceActivityDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\SharedResources.cs" />
@@ -109,19 +100,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Designers\BusinessLicenseActivityDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Designers\CcintOcrClientActivityDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Designers\IdCardActivityDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Designers\VatInvoiceActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

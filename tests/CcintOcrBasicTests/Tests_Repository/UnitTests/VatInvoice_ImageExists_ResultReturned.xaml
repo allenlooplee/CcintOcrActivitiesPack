@@ -138,7 +138,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <coa1:VatInvoiceActivity ContinueOnError="{x:Null}" DisplayName="VAT Invoice" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_2" ImagePath="[vatInvoice]" Result="[ocrResult]" />
+              <coa:VatInvoiceActivity ContinueOnError="{x:Null}" DisplayName="VAT Invoice" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_1" ImagePath="[vatInvoice]" Result="[ocrResult]" />
               <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[actual]</OutArgument>
