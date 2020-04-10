@@ -11,17 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ccint.Ocr.Activities", "Cci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ccint.Ocr.Activities.Design", "Ccint.Ocr\Ccint.Ocr.Activities.Design\Ccint.Ocr.Activities.Design.csproj", "{54DCD9AD-F9FC-48D8-941A-C6B77C572798}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{081047A4-FC12-4D39-B02A-828F5F852FE4}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
-		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -47,8 +37,6 @@ Global
 		{7E269E8D-D949-4FF6-A885-D6360B16C2AB} = {96FF4A57-9616-47AC-B4AF-891BEB2FA7E0}
 		{BCAF0C2C-1870-4982-9E8D-4C7732993841} = {96FF4A57-9616-47AC-B4AF-891BEB2FA7E0}
 		{54DCD9AD-F9FC-48D8-941A-C6B77C572798} = {96FF4A57-9616-47AC-B4AF-891BEB2FA7E0}
-		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {081047A4-FC12-4D39-B02A-828F5F852FE4}
-		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {081047A4-FC12-4D39-B02A-828F5F852FE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4658AE2-939C-44E1-9B32-1A4176C2A351}
