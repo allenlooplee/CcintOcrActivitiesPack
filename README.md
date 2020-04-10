@@ -8,9 +8,9 @@
 
 在UiPath Studio中使用合合OCR活动包可以遵循以下步骤：
 1. **创建项目**：使用[templates/CcintOcrBasicProcess](https://github.com/allenlooplee/CcintOcrActivitiesPack/tree/master/templates/CcintOcrBasicProcess)模版创建OCR流程，你可以查阅[它的文档](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/docs/ccint-ocr-basic-process.md)。
-2. **安装活动包**：在GitHub Releases中下载[v0.1.0 pre-release](https://github.com/allenlooplee/CcintOcrActivitiesPack/releases/tag/v0.1.0)，并在UiPath Studio的Manage Packages中安装。
+2. **安装活动包**：在GitHub Releases中下载[v0.2.0 pre-release](https://github.com/allenlooplee/CcintOcrActivitiesPack/releases/tag/v0.2.0)，并在UiPath Studio的Manage Packages中安装。
 3. **配置密钥**：在[config/recognizer_config.xlsx](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/templates/CcintOcrBasicProcess/config/recognizer_config.xlsx)中填入相应的app key和app secret.
-4. **使用活动**：把你想使用的OCR活动从Activities面板拖到Ccint OCR Scope活动中。
+4. **使用活动**：把你想使用的OCR活动从Activities面板拖到OCR Scope活动中。
 
 ## OCR活动清单
 
@@ -18,10 +18,10 @@
 
 #|名称|类型|活动
 ---|---|---|---
-1|[增值税发票识别](https://ai.ccint.com/api/vision/vat_invoice)|票据类|[VatInvoiceActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/VatInvoiceActivity.cs)
-2|[银行卡识别](https://ai.ccint.com/api/vision/bank_card)|证照类|[BankCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BankCardActivity.cs)
-3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|公司商铺类|[BusinessLicenseActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/BusinessLicenseActivity.cs)
-4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|证照类|[IdCardActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/IdCardActivity.cs)
+1|[增值税发票识别](https://ai.ccint.com/api/vision/vat_invoice)|票据类|[VatInvoiceActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VatInvoiceActivity.cs)
+2|[银行卡识别](https://ai.ccint.com/api/vision/bank_card)|证照类|[BankCardActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/BankCardActivity.cs)
+3|[营业执照识别](https://ai.ccint.com/api/vision/business_license)|公司商铺类|[BusinessLicenseActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/BusinessLicenseActivity.cs)
+4|[身份证识别](https://ai.ccint.com/api/vision/id_card)|证照类|[IdCardActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/IdCardActivity.cs)
 5|[票据机器人](https://ai.ccint.com/api/vision/general_receipt_recog)|智能技术|[AutoReceiptActivity](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/Ccint.Ocr/Ccint.Ocr.Activities/Activities/AutoReceiptActivity.cs)
 
 ## 其他代码库和参考资料
