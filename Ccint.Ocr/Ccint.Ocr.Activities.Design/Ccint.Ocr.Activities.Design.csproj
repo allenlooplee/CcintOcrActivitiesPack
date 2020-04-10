@@ -91,16 +91,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="..\..\Shared\Themes\Generic.xaml">
-      <Link>Themes\Generic.xaml</Link>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Designers\AutoReceiptActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Designers\CcintOcrClientActivityDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
