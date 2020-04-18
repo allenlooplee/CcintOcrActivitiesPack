@@ -7,10 +7,11 @@
 ## 快速开始
 
 在UiPath Studio中使用合合OCR活动包可以遵循以下步骤：
-1. **创建项目**：使用[templates/CcintOcrBasicProcess](https://github.com/allenlooplee/CcintOcrActivitiesPack/tree/master/templates/CcintOcrBasicProcess)模版创建OCR流程，你可以查阅[它的文档](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/docs/ccint-ocr-basic-process.md)。
+1. **创建项目**：使用[templates/CloudOcrBasicProcess](https://github.com/allenlooplee/CloudOcrActivitiesPack/tree/master/templates/CloudOcrBasicProcess)模版创建OCR流程，你可以查阅[它的文档](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/docs/cloud-ocr-basic-process.md)。
 2. **安装活动包**：在GitHub Releases中下载[v0.3.0 pre-release](https://github.com/allenlooplee/CcintOcrActivitiesPack/releases/tag/v0.3.0)，并在UiPath Studio的Manage Packages中安装。
-3. **配置密钥**：在[config/recognizer_config.xlsx](https://github.com/allenlooplee/CcintOcrActivitiesPack/blob/master/templates/CcintOcrBasicProcess/config/recognizer_config.xlsx)中填入相应的app key和app secret.
-4. **使用活动**：把你想使用的OCR活动从Activities面板拖到OCR Scope活动中。
+3. **配置密钥**：在[config/ccint_ocr_config.xlsx](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/templates/CloudOcrBasicProcess/config/ccint_ocr_config.xlsx)中填入相应的app key和app secret。
+4. **加载密钥**: 使用[snippets/LoadCcintOcrConfig.xaml](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/snippets/LoadCcintOcrConfig.xaml)代码片段从上述配置文件加载密钥。
+5. **使用活动**：把你想使用的OCR活动从Activities面板拖到OCR Scope活动中。
 
 ## OCR活动清单
 
@@ -32,6 +33,7 @@
 12|[车辆合格证识别](https://ai.ccint.com/api/vision/vehicle_certificate)|车辆相关|[VehicleCertificateActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VehicleCertificateActivity.cs)
 
 ## 其他代码库和参考资料
+* [云可扩展OCR活动包](https://github.com/allenlooplee/CloudOcrActivitiesPack)
 * [合合文字识别API文档](https://ai.ccint.com/doc/api/general_license_recog/v1.0)
 * [JSON.NET](https://github.com/JamesNK/Newtonsoft.Json)
 * [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
