@@ -13,6 +13,8 @@
 4. **加载密钥**: 使用[snippets/LoadCcintOcrConfig.xaml](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/snippets/LoadCcintOcrConfig.xaml)代码片段从上述配置文件加载密钥。
 5. **使用活动**：把你想使用的OCR活动从Activities面板拖到OCR Scope活动中。
 
+*如果安装的时候提示找不到Cloud.Ocr程序集，请到[Cloud OCR的Releases](https://github.com/allenlooplee/CloudOcrActivitiesPack/releases/tag/v0.2.0)中下载并安装。后续所有活动包都发布到nuget.org就不会有这个问题了。*
+
 ## OCR活动清单
 
 本活动包支持以下[云可扩展OCR活动包](https://github.com/allenlooplee/CloudOcrActivitiesPack)的OCR活动：
