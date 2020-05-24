@@ -61,7 +61,7 @@ namespace Ccint.Ocr.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ccint.OCR.
+        ///   Looks up a localized string similar to Cloud OCR.Clients.
         /// </summary>
         internal static string Category {
             get {
@@ -111,6 +111,15 @@ namespace Ccint.Ocr.Activities.Design.Properties {
         internal static string Editing {
             get {
                 return ResourceManager.GetString("Editing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cloud OCR.Recognizers.
+        /// </summary>
+        internal static string RecognizersCategory {
+            get {
+                return ResourceManager.GetString("RecognizersCategory", resourceCulture);
             }
         }
     }

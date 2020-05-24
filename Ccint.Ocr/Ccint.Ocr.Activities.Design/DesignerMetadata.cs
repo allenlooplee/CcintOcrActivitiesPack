@@ -16,10 +16,11 @@ namespace Ccint.Ocr.Activities.Design
             builder.ValidateTable();
 
             var categoryAttribute =  new CategoryAttribute($"{Resources.Category}");
+            var recognizersCategoryAttribute = new CategoryAttribute($"{Resources.RecognizersCategory}");
 
             #endregion Setup
 
-            builder.AddCustomAttributes(typeof(AutoReceiptActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(AutoReceiptActivity), recognizersCategoryAttribute);
             builder.AddCustomAttributes(typeof(AutoReceiptActivity), new DesignerAttribute(typeof(AutoReceiptActivityDesigner)));
             builder.AddCustomAttributes(typeof(AutoReceiptActivity), new HelpKeywordAttribute(""));
 

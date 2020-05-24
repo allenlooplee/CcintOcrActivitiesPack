@@ -32,13 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cloud.Ocr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0.412112820\lib\net461\Cloud.Ocr.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0\lib\net461\Cloud.Ocr.dll</HintPath>
     </Reference>
     <Reference Include="Cloud.Ocr.Activities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0.412112820\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0\lib\net461\Cloud.Ocr.Activities.dll</HintPath>
     </Reference>
     <Reference Include="Cloud.Ocr.Activities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0.412112820\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
+      <HintPath>..\..\packages\Cloud.Ocr.Activities.0.2.0\lib\net461\Cloud.Ocr.Activities.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

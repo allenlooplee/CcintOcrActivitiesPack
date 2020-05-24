@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Ccint.Ocr.Activities")]
-[assembly: AssemblyDescription("This package was generated using the UiPath VS Extension.")]
+[assembly: AssemblyDescription("Ccint OCR Activities Pack for UiPath")]
 [assembly: AssemblyConfiguration("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
